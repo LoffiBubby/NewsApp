@@ -39,9 +39,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
         holder.text_title.setText(headLines.get(position).getTitle());
         holder.text_source.setText(headLines.get(position).getSource());
 
-        if (!headLines.get(position).getNewsImgs().isEmpty()
-        && headLines.get(position).getNewsImgs().get(0).getUrl()!=null){
-            Picasso.get().load(headLines.get(position).getNewsImgs().get(0).getUrl()).into(holder.img_headline);
+        if (!headLines.get(position).getPic_url().isEmpty()
+        && headLines.get(position).getPic_url()!=null){
+            Picasso.get().load(headLines.get(position).getPic_url()).into(holder.img_headline);
         }
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {

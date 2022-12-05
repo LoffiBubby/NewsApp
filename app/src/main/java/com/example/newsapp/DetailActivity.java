@@ -34,12 +34,12 @@ public class DetailActivity extends AppCompatActivity {
 //        System.out.println(headLines.getTitle());
         txt_author.setText(headLines.getSource());
         txt_time.setText(headLines.getTime());
-//        txt_detail.setText(headLines.getContent());
+        txt_detail.setText(headLines.getDescription());
 //        System.out.println(headLines.getContent());
         txt_content.setText(headLines.getContent());
-        if (!headLines.getNewsImgs().isEmpty()
-                && headLines.getNewsImgs().get(0).getUrl()!=null){
-            Picasso.get().load(headLines.getNewsImgs().get(0).getUrl()).into(img_news);
+        if (!headLines.getPic_url().isEmpty()
+                && headLines.getPic_url()!=null){
+            Picasso.get().load(headLines.getPic_url()).into(img_news);
         }
     }
 }

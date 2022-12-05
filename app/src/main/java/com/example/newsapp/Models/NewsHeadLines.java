@@ -11,6 +11,8 @@ public class NewsHeadLines implements Serializable {
     String time = "";
     String url = "";
     String content = "";
+    String pic_url = "";
+    String description = "";
     List<NewsContentsItem> newsContents;
     List<NewsTexts> newsTexts;
     List<NewsImages> newsImgs;
@@ -83,5 +85,21 @@ public class NewsHeadLines implements Serializable {
 
     public void setNewsImgs(List<NewsImages> newsImgs) {
         this.newsImgs = newsImgs;
+    }
+
+    public String getPic_url() {
+        return pic_url;
+    }
+
+    public void setPic_url(String pic_url) {
+        this.pic_url = pic_url;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

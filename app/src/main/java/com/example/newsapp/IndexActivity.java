@@ -35,5 +35,15 @@ public class IndexActivity extends AppCompatActivity {
             }
         });
 
+        Button btn_6 = findViewById(R.id.btn_6);
+
+        btn_6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, AboutUs.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

@@ -2,5 +2,6 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/noto_serif_bold</item>
+        <item>@font/song_myung</item>
     </array>
 </resources>
