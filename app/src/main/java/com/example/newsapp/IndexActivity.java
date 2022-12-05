@@ -45,5 +45,44 @@ public class IndexActivity extends AppCompatActivity {
             }
         });
 
+        Button btn_1 = findViewById(R.id.btn_1);
+        Button btn_3 = findViewById(R.id.btn_3);
+        Button btn_4 = findViewById(R.id.btn_4);
+        Button btn_5 = findViewById(R.id.btn_5);
+
+        btn_1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, DevelopingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, DevelopingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, DevelopingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(IndexActivity.this, DevelopingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 }
