@@ -40,37 +40,47 @@
 
     </TextView>
     <TextView
+        android:id="@+id/txt_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="160dp"
-        android:text="电话："
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="110dp"
+        android:text="111"
         android:textSize="20sp">
     </TextView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="210dp"
-        android:text="传真："
-        android:textSize="20sp">
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="180dp"
         android:text="邮箱："
         android:textSize="20sp">
     </TextView>
     <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="180dp"
+        android:text="111"
+        android:textSize="20sp">
+    </TextView>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="310dp"
+        android:layout_marginTop="250dp"
         android:text="邮编："
         android:textSize="20sp">
-
+    </TextView>
+    <TextView
+        android:id="@+id/txt_postcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="250dp"
+        android:text="111"
+        android:textSize="20sp">
     </TextView>
 
     <TextView

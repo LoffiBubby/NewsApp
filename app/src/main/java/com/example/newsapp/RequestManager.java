@@ -5,6 +5,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
+import com.example.newsapp.Models.InfoDescription;
 import com.example.newsapp.Models.NewsApiResponse;
 import com.example.newsapp.OnFetchDataListener;
 

@@ -35,7 +35,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        System.out.println(headLines.get(position).getTitle());
+//        System.out.println(headLines.get(position).getTitle());
         holder.text_title.setText(headLines.get(position).getTitle());
         holder.text_source.setText(headLines.get(position).getSource());
 

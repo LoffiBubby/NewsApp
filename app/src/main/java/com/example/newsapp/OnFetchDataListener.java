@@ -1,5 +1,6 @@
 package com.example.newsapp;
 
+import com.example.newsapp.Models.InfoDescription;
 import com.example.newsapp.Models.NewsHeadLines;
 
 import java.util.List;

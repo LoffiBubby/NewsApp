@@ -1,5 +1,7 @@
 package com.example.newsapp.Models;
 
+import android.net.wifi.ScanResult;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -7,6 +9,7 @@ public class NewsApiResponse implements Serializable {
     int code;
     String msg;
     List<NewsHeadLines> data;
+
 
     public int getCode() {
         return code;

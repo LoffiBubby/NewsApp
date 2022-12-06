@@ -2,6 +2,7 @@ package com.example.newsapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.icu.text.IDNA;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -9,14 +10,26 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewSwitcher;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.newsapp.Models.InfoDescription;
+import com.example.newsapp.Models.NewsApiResponse;
 import com.google.android.material.animation.AnimationUtils;
+
+import org.w3c.dom.Text;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class IndexActivity extends AppCompatActivity {
 
+    TextView text_info;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -82,7 +95,25 @@ public class IndexActivity extends AppCompatActivity {
             }
         });
 
+        text_info = findViewById(R.id.description);
 
+        getInformation();
+    }
 
+    private void getInformation() {
+        Call<NewsApiResponse> call = RetrofitClient1.getInstance().getMyApi().getInformation();
+        call.enqueue(new Callback<NewsApiResponse>() {
+            @Override
+            public void onResponse(@NonNull Call<NewsApiResponse> call, @NonNull Response<NewsApiResponse> response) {
+                NewsApiResponse newsApiResponse = response.body();
+                assert newsApiResponse != null;
+                text_info.setText(newsApiResponse.getData().get(0).getVariable_value());
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<NewsApiResponse> call, @NonNull Throwable t) {
+                Toast.makeText(IndexActivity.this, "An Error Existed", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
