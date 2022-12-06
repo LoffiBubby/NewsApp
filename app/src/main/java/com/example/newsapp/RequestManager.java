@@ -23,7 +23,7 @@ public class RequestManager {
     Context context;
 
     Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("https://news.zejiachem.com/server/")
+            .baseUrl("https://zejiachem.com/server/")
             .addConverterFactory(GsonConverterFactory.create())
             .build();
 

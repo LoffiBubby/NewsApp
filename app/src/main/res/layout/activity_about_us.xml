@@ -74,21 +74,11 @@
     </TextView>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="520dp"
-        android:layout_marginEnd="20dp"
-        android:text="免责申明:"
-        android:textSize="15sp">
-
-    </TextView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="本站所有文字内容和图片由泽伽化工提供,内容仅供参考,专业内容请电话核实.2、极限夸张文字、图片已检查多遍并删除,如有遗漏均无效,不作为宣传使用,不作赔付理由。"
-        android:textSize="15sp"
-        android:layout_marginTop="550dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="免责声明：本站所有文字内容和图片由泽伽化工提供,内容仅供参考,专业内容请电话核实.2、极限夸张文字、图片已检查多遍并删除,如有遗漏均无效,不作为宣传使用,不作赔付理由。"
+        android:textSize="13sp"
+        android:gravity="bottom"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp">
 
